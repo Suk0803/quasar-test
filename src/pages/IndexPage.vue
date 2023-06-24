@@ -50,10 +50,10 @@
     <div>
       <q-btn label="1+1" />
       <q-btn :label="now" />
-      <pre>{{ now }}</pre>
+      <pre>now: {{ now }}</pre>
     </div>
     <div>
-      <q-input filled v-modal="price" />
+      <q-input filled v-model="price" />
       <pre>vat: {{ price * 0.1 }}</pre>
     </div>
   </q-page>
